@@ -16,7 +16,7 @@
 * Run scenario：  
   运行实际工作负载，可在/sys/kernel/debug/gcov中发现*.gcda; *.gcno等文件，记录着运行时的性能数据  
 * optimizing the Kernel:  
-  增加"-fprofile-use"配置，如：
+  重新编译，增加"-fprofile-use"选项，如：
   ```bash
   KCFLAGS="-fprofile-use=/home/user81/gcov-test/generic-instr/gcov -Wno-coverage-mismatch -Wno-error=coverage-mismatch"
   ```
