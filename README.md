@@ -44,7 +44,10 @@
   #This initial submission is restricted to x86, as that's the platform we know works. 
   #This restriction can be lifted once other platforms have been verified to work with PGO.
   ```
-  
+## Problems  
+* [Profiling with Instrumentation](https://clang.llvm.org/docs/UsersManual.html#profiling-with-instrumentation) 中给出的收集.profdata的示例是基于一个简单的源代码文件说明的，至于编译linux内核并运行得到proraw文件并整合成编译器可用的profdata文件的过程需要再实践中探索  
+* 目前调研到的方案似乎暂时只在x86平台上进行了验证  
+* 可能还存在一些工具链构建方面的问题有待于在实践中进一步学习
 ## To do 
 * 目前主要是补充了一些相关的基础知识，有了整体的认识和理解，下一步要在实践中探索,计划在x86架构下尝试pgo三部曲:  
 "instrumentation"->"Running scenario"->"optimizing the Kernel"  
